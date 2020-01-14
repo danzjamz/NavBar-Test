@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 5em;
+    background: #008080;
+    padding: 0 2em;
+}
+
+.navbar .link {
+    display: block;
+}
+
+.navbar .toggle,
+.navbar .brand {
+    display: inline-block;
+}
+
+.logo {
+    margin: 1em;
+    padding: 1em;
+    text-align: left;
+    width: 10em;
+    text-decoration: none;
+}
+
+.left-links {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.right-links {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.link {
+    text-decoration: none;
+    background: #005454;
+    color: black;
+    padding: 1.91em;
+}
+
+#hamburger {
+    display: none;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1.09em;
+}
+
+@media (min-width: 48em) {
+    .left-links, .right-links {
+        display: flex;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+@media (max-width: 48em) {
+    .left-links, .right-links {
+        display: none;
+    }
+
+    #hamburger {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .navbar.active div {
+        display: block;
+    }
+
+    .navbar.active .toggle {
+        background: #004545;
+    }
+
+    .navbar .toggle,
+    .navbar .logo {
+        display: inline-block;
+    }
+}

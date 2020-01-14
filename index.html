@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/7bfdb387d2.js" crossorigin="anonymous"></script>
+    <!-- script for flex styles -->
+    <!-- <link rel="stylesheet" href="styles-flex.css"> -->
+
+    <!-- script for flex & grid styles -->
+    <link rel="stylesheet" href="styles-flex-grid.css">
+
+    <title>Nav Test</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="header">
+            <a href="#" class="toggle" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a href="#" class="logo">Logo</a>
+        </div>
+        <div class="left-links">
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+        </div>
+        <div class="right-links">
+            <a href="#" class="link">Link 3</a>
+        </div>
+    </div>
+</body>
+
+<script>
+    const navburger = document.querySelector('#hamburger');
+
+    // gives navburger's parent (.navbar) the 'active' class
+    navburger.addEventListener('click', (e) => {
+        // for syles-flex
+        // navburger.parentElement.classList.toggle('active');
+
+        // for styles-flex-grid
+        navburger.parentElement.parentElement.classList.toggle('active');
+    });
+</script>
+</html>
