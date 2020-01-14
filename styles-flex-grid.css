@@ -59,6 +59,11 @@ body {
     .navbar.active .link {
         display: block;
     }
+    .navbar {
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+    }
 
     #hamburger {
         display: inline-block;
@@ -82,6 +87,8 @@ body {
     .navbar.active .toggle {
         background: rgb(37, 66, 49);
         padding: 1.09em;
+        position: absolute;
+        z-index: 1;
     }
 }
 
@@ -90,9 +97,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 50em;
 }
 
 img {
     transform: rotate(90deg);
     width: 60%;
+    overflow: hidden;
 }
